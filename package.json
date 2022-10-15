@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/gnahc2305/restaurant/issues"
   },
-  "homepage": "https://github.com/gnahc2305/restaurant#readme"
+  "homepage": "https://github.com/gnahc2305/restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
