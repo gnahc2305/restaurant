@@ -13,17 +13,17 @@ function createHeader() {
 
     const navbar = document.createElement('ul');
     const list1 = document.createElement('li');
-    const link1 = document.createElement('a');
-    link1.textContent = 'Home'
-    link1.href = 'https://github.com/gnahc2305/restaurant'
+    list1.classList.add('home');
+    list1.textContent = 'Home'
     const list2 = document.createElement('li');
+    list2.classList.add('menu');
     list2.textContent = 'Menu'
     const list3 = document.createElement('li');
+    list3.classList.add('contact');
     list3.textContent = 'Contact Us'
     
     header_div.appendChild(navbar);
     navbar.appendChild(list1);
-    list1.appendChild(link1);
     navbar.appendChild(list2);
     navbar.appendChild(list3);
 
