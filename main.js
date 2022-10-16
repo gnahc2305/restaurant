@@ -110,13 +110,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/container.js":
+/*!**************************!*\
+  !*** ./src/container.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createContainer)\n/* harmony export */ });\n/* harmony import */ var _pasta_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pasta.jpg */ \"./src/pasta.jpg\");\n\n\nfunction createContainer() {\n    const container = document.createElement('div');\n    container.classList.add('container');\n\n    let p = document.createElement('p');\n    p.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime maiores tempora numquam deserunt ullam quidem veritatis atque dicta est asperiores consectetur minus, ut eaque corrupti inventore? Unde, animi ut?'\n\n    container.appendChild(p)\n\n\n    const myImage = new Image();\n    myImage.src = _pasta_jpg__WEBPACK_IMPORTED_MODULE_0__;    \n\n    container.appendChild(myImage);\n\n    content.appendChild(container);\n}\n\n//# sourceURL=webpack://restaurant/./src/container.js?");
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createFooter)\n/* harmony export */ });\nfunction createFooter() {\n    const footer = document.createElement('footer');\n    const a = document.createElement('a');\n\n    a.textContent = 'By: Andres Chang';\n    a.href = 'https://github.com/gnahc2305/restaurant'\n\n    footer.appendChild(a);\n    content.appendChild(footer);\n}\n\n//# sourceURL=webpack://restaurant/./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader() {\n    const header_div = document.createElement('div');\n    header_div.classList.add('header');\n\n    \n    const title = document.createElement('h1');\n    title.textContent = 'Restaurant';\n    \n    header_div.appendChild(title);\n\n\n    const navbar = document.createElement('ul');\n    const list1 = document.createElement('li');\n    const link1 = document.createElement('a');\n    link1.textContent = 'Home'\n    link1.href = 'https://github.com/gnahc2305/restaurant'\n    const list2 = document.createElement('li');\n    list2.textContent = 'Menu'\n    const list3 = document.createElement('li');\n    list3.textContent = 'Contact Us'\n    \n    header_div.appendChild(navbar);\n    navbar.appendChild(list1);\n    list1.appendChild(link1);\n    navbar.appendChild(list2);\n    navbar.appendChild(list3);\n\n    content.appendChild(header_div);\n}\n\n//# sourceURL=webpack://restaurant/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _pasta_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pasta.jpg */ \"./src/pasta.jpg\");\n\n\n\nconst myImage = new Image();\nmyImage.src = _pasta_jpg__WEBPACK_IMPORTED_MODULE_1__;\n\ndocument.querySelector('.container').appendChild(myImage);\n\n\n// const content = document.getElementById('content');\n\n// const header_div = document.createElement('div');\n// header_div.classList.add('header');\n\n// const title = document.createElement('h1');\n// title.textContent = 'Restaurant';\n\n// header_div.appendChild(title);\n\n// const navbar = document.createElement('ul');\n// const list1 = document.createElement('li');\n// list1.textContent = 'Home'\n// const list2 = document.createElement('li');\n// list2.textContent = 'Menu'\n// const list3 = document.createElement('li');\n// list3.textContent = 'Contact Us'\n\n// header_div.appendChild(navbar);\n// navbar.appendChild(list1);\n// navbar.appendChild(list2);\n// navbar.appendChild(list3);\n\n\n// content.appendChild(header_div);\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _pasta_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pasta.jpg */ \"./src/pasta.jpg\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./container */ \"./src/container.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n\n// const content = document.getElementById('content');\n\n(0,_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_container__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
