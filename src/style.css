@@ -47,7 +47,7 @@ a {
     font-size: 20px;
 }
 
-img {
+.container img {
     height: auto;
     width: 55%;
     min-width: 350px;
@@ -62,4 +62,48 @@ footer {
     text-align: center;
     font-size: 18px;
     padding: 10px;  
+}
+
+
+
+.container-menu {
+    /* background-color: coral; */
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.container-menu p {
+    font-size: 25px;
+}
+
+.pizza {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.bakedpasta {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.container-menu img {
+    height: 200px;
+    width: 200px;
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 3; */
+}
+
+
+
+.container-contact {
+    /* background-color: coral; */
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+    text-align: center;
 }
